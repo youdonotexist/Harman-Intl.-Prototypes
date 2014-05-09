@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" ng-app="Blinky">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>My AngularJS App</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <link rel="stylesheet" href="lib/nouislider/jquery.nouislider.min.css"/>
+
+    <!-- Latest compiled and minified CSS -->
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">-->
+
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">-->
+</head>
+<body>
+
+<div class="row bar bar-header bar-dark" style="height:5%">
+        <div class="col-10 menu-button"> Find<br/>Devices </div>
+        <!-- <div style="border-left:1px solid #ffffff;margin-top: 2px; margin-bottom: 2px;"></div>-->
+        <div class="col-10 menu-button" > Patch<br/>Outputs</div>
+    <!-- <div style="border-left:1px solid #ffffff;margin-top: 2px; margin-bottom: 2px;"></div>-->
+        <div class="col-10 menu-button" > Patch<br/>Inputs </div>
+    <!-- <div style="border-left:1px solid #ffffff;margin-top: 2px; margin-bottom: 2px;"></div>-->
+        <div class="col-10 menu-button" > Check<br/>System </div>
+    <!-- <div style="border-left:1px solid #ffffff;margin-top: 2px; margin-bottom: 2px;"></div>-->
+    </div>
+</div>
+
+<div class="row" style="height:95%;margin-top:4%">
+    <div ng-view style="height:100%">
+
+    </div>
+</div>
+
+  <!--<ul class="menu">
+    <li></li>
+  </ul>-->
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery-2.0.3.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/ionic/ionic.min.js"></script>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+    <script src="lib/angular/angular-touch.js"></script>
+    <script src="lib/angular/angular-sanitize.js"></script>
+    <script src="lib/ng-infinite-scroll.js"></script>
+    <script src="lib/pixi.dev.js"></script>
+    <script src="lib/nouislider/jquery.nouislider.min.js"></script>
+
+    <script src="lib/ionic/ionic-angular.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/utils.js"></script>
+
+    <script src="js/canvas/RenderContext.js"></script>
+    <script src="js/canvas/BlinkySprite.js"></script>
+    <script src="js/canvas/BlinkySprite2.js"></script>
+    <script src="js/canvas/Game.js"></script>
+    <script src="js/canvas/graph/curvecalculator.js"></script>
+    <script src="js/canvas/graph/graph.js"></script>
+    <script src="js/canvas/graph/peqgraph.js"></script>
+
+    <script>
+        (function(){var script=document.createElement('script');script.src='lib/stats.min.js';document.body.appendChild(script);script=document.createElement('script');script.innerHTML='var interval=setInterval(function(){if(typeof Stats==\'function\'){clearInterval(interval);var stats=new Stats();stats.domElement.style.position=\'fixed\';stats.domElement.style.left=\'0px\';stats.domElement.style.top=\'0px\';stats.domElement.style.zIndex=\'10000\';document.body.appendChild(stats.domElement);setInterval(function(){stats.update();},1000/60);}},100);';document.body.appendChild(script);})();
+    </script>
+</body>
+</html>

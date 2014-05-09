@@ -1,0 +1,70 @@
+<div class="row" style="width:100%;height:5%;">
+    <!-- Draw Channel Bank-->
+    <div class="col" ng-repeat="i in ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O']" style="height:100%; margin-left:5px;margin-right:5px;">
+        <div style="height:50%;font-size:90%;color:white; margin-bottom:5%; margin-left:auto;margin-right:auto;width:10%"> {{i}} </div>
+        <img src="images/groups.png" style="width:100%; height:50%">
+    </div>
+</div>
+<div class="row" style="height:95%;padding-left:0;padding-right:0">
+    <!-- Draw Input Channels -->
+    <div class="col-90" style="height:100%">
+        <div class="row infinite-scroll-container" infinite-scroll-horizontal="more()" ng-controller="RunShowController" style="padding-left:0; padding-right:0; height:100%;overflow-x:scroll;-webkit-overflow-scrolling:touch">
+            <div class="col-10 rounded-grouper" style="-webkit-transform: translate3d(0,0,0); height:100%" ng-repeat="i in items">
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 8%;padding:0;margin-top:5px"> </div>
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 8%;padding:0;margin-top:5px"> </div>
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 8%; ;padding:0;margin-top:5px"> </div>
+                <div class="row rounded-border" peq-graph  ng-controller="PEQGraphController"
+                     style="height: 8%; ;padding:0;margin-top:5px"> </div>
+
+                <div class="row" style="height:10%;padding:0;margin-top:1px;background-color:#263030">
+                    <input type="text" style="margin:auto;height:50%;background-color:#fff">
+                </div>
+
+                <div class="row" style="height:9%;padding:0;font-size:90%;background-color:#263030;">
+                    <div class="rounded-border" style="margin-top:auto;margin-bottom:auto;width:100%;color:lawngreen;text-align:center;">ON</div>
+                </div>
+                <div class="row" style="height:9%;padding:0;font-size:90%;background-color:#263030;">
+                    <div class="rounded-border" style="margin-top:auto;margin-bottom:auto;width:100%;color:grey;text-align:center;">SOLO</div>
+                </div>
+                <div class="row" style="height: 40%;background-color: #263030; padding: 0;">
+                    <div vertical-slider style="height:100%; padding-top: 10%; padding-bottom: 10%;margin-left:auto;margin-right:auto" id="{{'slider' + i}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Draw Output (right now there's only one)-->
+    <div class="col-10" style="height:100%">
+        <div class="row" style="height:100%">
+            <div class="col rounded-grouper" style="height:100%;padding:0px">
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 10%;padding:0;margin-top:5px"> </div>
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 10%;padding:0;margin-top:5px"> </div>
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 10%; ;padding:0;margin-top:5px"> </div>
+                <div class="row rounded-border" peq-graph ng-controller="PEQGraphController"
+                     style="height: 10%; ;padding:0;margin-top:5px"> </div>
+                <div class="row" style="padding:0; padding-top:2em; padding-bottom:2em;background-color:#263030">
+                    <input type="text"  style="height:10%;padding-top:5px; background-color:#fff">
+                </div>
+
+                <div class="row" style="padding-top:10px;background-color:#263030;">
+                    <div class="rounded-border" style="color:lawngreen;margin-left:auto;margin-right:auto;">ON</div>
+                </div>
+                <div class="row" style="background-color: #263030; height: 35%;padding: 0;">
+                    <div vertical-slider style="height:100%; margin-top: 2px; margin-bottom: 2px;margin-left:auto;margin-right:auto">
+                    </div>
+                </div>
+                <div class="row" style="background-color:#263030; height:5%; padding: 0;">
+                    <div class="rounded-border" style="color:grey;margin-left:auto;margin-right:auto;">SOLO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

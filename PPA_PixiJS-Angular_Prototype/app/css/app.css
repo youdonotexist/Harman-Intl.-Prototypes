@@ -1,0 +1,116 @@
+/* app css stylesheet */
+
+html{
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    /*min-height: 100%;*/
+    font-size: 18px;
+    line-height: 26px;
+    background-color: black
+}
+h1,h2,h3,h4,h5,h6,p {
+    font-family: inherit;
+    font-size: inherit;
+}
+h1 {
+    font-size: 4em;
+    line-height: 1em;
+}
+h2 {
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.max-height {
+    height:100%;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu-button {
+    color: grey;
+    text-align: center;
+    line-height:100%;
+    font-size:100%;
+    height:100%;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.rounded-border {
+    background-color: black;
+    border-style:solid;
+    border-radius: 3px;
+    border-color: #35a630;
+    border-width: 1px;
+}
+
+.rounded-grouper {
+    padding-left: 0.5em;
+    padding-right:0.5em;
+}
+
+.col-5 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 5%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 5%;
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
+    max-width: 5%; }
+
+.noUi-handle {
+    border: solid  !important;
+    border-width: 0.1em !important;
+    border-color: #c3c3c3 !important;
+    background-color: #707070 !important;
+
+    width: 400% !important;
+    left: -150% !important;
+
+    box-shadow: none !important;
+}
+
+.noUi-handle:after {
+    width:90% !important;
+    height: 20% !important;
+    background-color: #c3c3c3 !important;
+    border: none !important;
+    box-shadow: 0px 0px 0px 2px black inset !important;
+
+    top: 40% !important;
+    left: 5% !important;
+}
+
+.noUi-handle:before {
+    border: none !important;
+    background: none !important;
+}
