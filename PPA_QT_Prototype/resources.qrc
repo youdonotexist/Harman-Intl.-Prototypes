@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>src/qml/js/graphScripts.js</file>
+        <file>src/qml/js/canvasScripts.js</file>
+        <file>src/qml/controls/common/_Text.qml</file>
+        <file>src/qml/controls/common/Knob.qml</file>
+    </qresource>
+</RCC>

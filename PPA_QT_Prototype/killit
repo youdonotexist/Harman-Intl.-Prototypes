@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# When you run an app from Qt Creator, it won't kill the previous run app. Because of this, a bunch of instances of the executable end up cluttering your dock (This is OS X talk, Windows may not suffer from the same problem). To fix, we add this script as part of the build process for the Desktop build which simply kills all PPA processes before launching another. 
+
+
+killall PPA || true
